@@ -1,2 +1,22 @@
-# streamlit-regression-app
-自动回归分析的 Streamlit 应用
+# 📊 Streamlit 多元回归自动分析工具（含自动特征选择）
+
+这是一个可直接在线使用的 **多元线性回归分析 Web 应用**。  
+上传 Excel 文件后，系统会自动：
+
+- 读取每个 Sheet
+- 多元线性回归（使用 statsmodels）
+- 遍历所有特征组合（Best Subset Selection）
+- 通过 AIC 选择最佳模型
+- 输出详细回归结果（含显著性、coef、p-value 等）
+- 自动绘制：
+  - 散点矩阵图（Pairplot）
+  - 残差图
+  - QQ 正态性检验图
+  - 实际值 vs 预测值图
+
+适用于商业分析、实验数据、制造质量、房价预测、教育分析等场景。
+
+---
+
+## 🚀 在线访问（部署成功后放这里）
+
